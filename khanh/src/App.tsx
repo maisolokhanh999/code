@@ -79,7 +79,7 @@ function App() {
             <div className="relative w-full h-auto">
               <img
                 className="w-screen h-[250px] rounded-[16px] object-cover" src={movie?.image} alt={movie?.movieName} />
-              <div className="absolute left-[40px] top-[45px] text-white max-w-[250px]">
+              <div className="absolute left-[40px] top-[45px] text-white max-w-[500px]">
                 <p className="text-3xl text-left font-bold mb-2 ">{movie?.movieName}</p>
                 <p className="text-sm text-left leading-relaxed text-gray-200">{movie?.description}</p>
               </div>
