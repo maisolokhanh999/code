@@ -1,0 +1,3 @@
+cd khanh
+npm run dev
+https://github.com/PhanDuyen1603/MindX-C4EJS163-Level2
