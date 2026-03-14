@@ -69,7 +69,7 @@ function App() {
           />
         </div>
         <div className='py-[15px]'>
-          <p className="text-[32px]">Explore</p>
+          <p className="text-[32px] text-amber-50">Explore</p>
         </div>
         <div className='py-[15px]'>
           <p className="text-[22px] text-gray-500">What are you gonna watch today ?</p>
@@ -89,7 +89,6 @@ function App() {
         <div className='py-[15px]'>
           <p className="text-[36px] text-amber-50">New Release</p>
         </div>
-
       </div>
     </>
   )
