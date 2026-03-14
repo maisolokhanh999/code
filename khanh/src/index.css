@@ -1,6 +1,6 @@
 @import "tailwindcss";
 * {
   box-sizing: border-box;
-  color: white;
+  
   font-family:  sans-serif, 'Poppins';
 }
