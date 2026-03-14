@@ -74,18 +74,22 @@ function App() {
         <div className='py-[15px]'>
           <p>What are you gonna watch today ?</p>
         </div>
-        <div>
+        <div className='py-[15px]'>
           <button>
             <div className="relative w-full h-[300px]">
               <img
-                className="w-full h-[300px] rounded-[12px] object-cover" src={movie?.image} alt={movie?.movieName} />
-              <div  className="absolute left-[40px] top-[45%] text-white max-w-[250px]">
+                className="w-screen h-[300px] rounded-[16px] object-cover" src={movie?.image} alt={movie?.movieName} />
+              <div  className="absolute left-[40px] top-[45px] text-white max-w-[250px]">
                 <p className="text-3xl font-bold mb-2">{movie?.movieName}</p>
                 <p className="text-sm leading-relaxed text-gray-200">{movie?.description}</p>
               </div>
             </div>
           </button>
         </div>
+        <div>
+          
+        </div>
+
       </div>
     </>
   )
