@@ -92,13 +92,15 @@ function App() {
         <div>
           <div className="grid grid-cols-6 gap-2.5">
             {data.map((item) => (
-              <div key={item.id} className="relative w-full h-auto">
+              <button>
+                <div key={item.id} className="relative w-full h-auto">
                 <img
                   className="w-[200px] h-[100px] rounded-[16px] object-cover" src={item.image} alt={item.movieName} />
                 <div className="absolute  text-white ">
                   <p className="text-[16px] text-left font-light mb-2 ">{item.movieName}</p>
                 </div>
               </div>
+              </button>
             ))}
           </div>
         </div>
