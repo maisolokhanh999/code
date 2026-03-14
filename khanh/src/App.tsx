@@ -90,7 +90,7 @@ function App() {
           <p className="text-[36px] text-amber-50">New Release</p>
         </div>
         <div>
-         <button c> <div className="grid grid-cols-6 gap-2.5">
+          <div className="grid grid-cols-6 gap-2.5">
             {data.map((item) => (
               <div key={item.id} className="relative w-full h-auto">
                 <img
@@ -100,7 +100,7 @@ function App() {
                 </div>
               </div>
             ))}
-          </div></button>
+          </div>
         </div>
       </div>
     </>
