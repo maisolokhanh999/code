@@ -9,6 +9,9 @@ import img6 from "./assets/images (3).jpg";
 import './App.css'
 
 function App() {
+   function handleClick() {
+    alert('You clicked me!');
+  }
   const data = [
     {
       id: 1,
@@ -92,7 +95,7 @@ function App() {
         <div>
           <div className="grid grid-cols-6 gap-2.5 justify-center">
             {data.map((item) => (
-              <button>
+              <button onClick={handleClick}>
                 <div key={item.id} className="relative w-full h-auto justify-center ">
                 <img
                   className="w-[200px] h-[100px] rounded-[16px] object-cover" src={item.image} alt={item.movieName} />
