@@ -90,14 +90,15 @@ function App() {
           <p className="text-[36px] text-amber-50">New Release</p>
         </div>
         <div>
-          <div className="grid grid-cols-6 gap-2.5">
+          <div className="grid grid-cols-6 gap-2.5 justify-center">
             {data.map((item) => (
               <button>
-                <div key={item.id} className="relative w-full h-auto">
+                <div key={item.id} className="relative w-full h-auto justify-center ">
                 <img
                   className="w-[200px] h-[100px] rounded-[16px] object-cover" src={item.image} alt={item.movieName} />
-                <div className="absolute  text-white ">
-                  <p className="text-[16px] text-left font-light mb-2 ">{item.movieName}</p>
+                <div className="absolute  left-0 right-0 
+                          text-white text-center ">
+                  <p className="text-[16px] text-center font-light mb-2 ">{item.movieName}</p>
                 </div>
               </div>
               </button>
