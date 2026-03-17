@@ -1,3 +1,4 @@
 cd khanh
 npm run dev
 https://github.com/PhanDuyen1603/MindX-C4EJS163-Level2
+https://www.figma.com/design/QpjibWivNdcWPS1C7ak0e5/Spa-Website-UI-Template-Design--Community-?node-id=9-866&t=2mNUnOs9pBHtuVDN-0

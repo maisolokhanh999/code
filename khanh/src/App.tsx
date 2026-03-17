@@ -56,7 +56,7 @@ function App() {
       episode: "28"
     },
   ];
-  const [count, setCount] = useState("");
+  // const [count, setCount] = useState("");
   const movie = data.find(item => item.id === 1);
   return (
     <>
