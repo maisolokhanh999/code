@@ -5,4 +5,4 @@ import img4 from "./assets/images (2).jpg";
 import img5 from "./assets/maxresdefault.jpg";
 import img6 from "./assets/images (3).jpg";
 
-export { img1, img2, img3, img4, img5, img6 };
+export  { img1, img2, img3, img4, img5, img6 };
