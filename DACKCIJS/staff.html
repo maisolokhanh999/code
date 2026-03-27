@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Staff Management | Velvet Bloom</title>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="app-container">
+                <aside class="sidebar" id="sidebar">
+            <div class="sidebar-brand">
+                <h1 class="brand-title">Velvet Bloom</h1>
+                <p class="brand-subtitle">Digital Sanctuary</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a class="nav-item" href="index.html">
+                    <span class="material-symbols-outlined nav-icon" data-icon="dashboard">dashboard</span>
+                    <span class="nav-text">Dashboard</span>
+                </a>
+                <a class="nav-item" href="appointments.html">
+                    <span class="material-symbols-outlined nav-icon" data-icon="calendar_month">calendar_month</span>
+                    <span class="nav-text">Appointments</span>
+                </a>
+                <a class="nav-item" href="services.html">
+                    <span class="material-symbols-outlined nav-icon" data-icon="spa">spa</span>
+                    <span class="nav-text">Services</span>
+                </a>
+                <a class="nav-item active" href="#">
+                    <span class="material-symbols-outlined nav-icon" data-icon="group"
+                        style="font-variation-settings: 'FILL' 1;">group</span>
+                    <span class="nav-text">Staff</span>
+                </a>
+            </nav>
+            <div class="sidebar-footer">
+                <a class="footer-link" href="#">
+                    <span class="material-symbols-outlined" data-icon="help">help</span>
+                    <span class="footer-text">Help Center</span>
+                </a>
+                <a class="footer-link" href="#">
+                    <span class="material-symbols-outlined" data-icon="logout">logout</span>
+                    <span class="footer-text">Sign Out</span>
+                </a>
+            </div>
+        </aside>
+
+                <main class="main-content">
+                        <header class="topbar">
+                <div class="topbar-left">
+                    <div class="menu-toggle" id="menuToggle">
+                        <span class="material-symbols-outlined text-primary" data-icon="menu">menu</span>
+                    </div>
+                    <span class="topbar-brand-text">Velvet Bloom</span>
+                </div>
+                <div class="topbar-right">
+                    <div class="topbar-search-staff hidden-mobile">
+                        <span class="material-symbols-outlined search-icon-staff" data-icon="search">search</span>
+                        <input class="search-input-staff" placeholder="Search staff..." type="text" />
+                    </div>
+                    <div class="flex-row gap-3 items-center">
+                        <button class="icon-btn">
+                            <span class="material-symbols-outlined icon-color"
+                                data-icon="notifications">notifications</span>
+                        </button>
+                        <button class="icon-btn">
+                            <span class="material-symbols-outlined icon-color" data-icon="settings">settings</span>
+                        </button>
+                        <div class="user-avatar border-primary-container border-2">
+                            <img alt="User profile"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDu4OARBp1h6BRLQVke_0lwjDzjApWejEZ-KimAiEUi7P0FxeT28VpVeUUYP9JcpUqewnFCzTEWl4QAOF-9LfpTw9ZEJS6iwoQSa2Kn7u_0ZnutTlJenSoBpzyrip0d9v3pEWwmHWtWOS1ocDoiebM3YnqfMsFrJfouaJ-eKMTG-nHZagdFGrjNYgSjZoW7zVixgcU0VL8k8lddWw3lJ6NlTUsk362Xt8LpNtucF9tctIeEFZQESO9sFW_LZ04qufiW58FNMxBHuuip" />
+                        </div>
+                    </div>
+                </div>
+            </header>
+
+                        <div class="dashboard-canvas">
+                                <div class="page-header-alt">
+                    <div class="page-header-text">
+                        <h2 class="page-title text-5xl">The Collective</h2>
+                        <p class="page-subtitle-alt">Nurture the heart of Velvet Bloom. Manage your dedicated team of
+                            wellness artisans and specialists.</p>
+                    </div>
+                    <button class="btn btn-primary btn-pill with-btn-icon shadow-lg-primary">
+                        <span class="material-symbols-outlined" data-icon="person_add">person_add</span>
+                        Add Staff Member
+                    </button>
+                </div>
+
+                                <div class="staff-stats-grid">
+                    <div class="staff-stat-card md-col-span-2">
+                        <div class="staff-stat-header">
+                            <span class="icon-circle-bg bg-secondary-fixed">
+                                <span class="material-symbols-outlined" data-icon="groups">groups</span>
+                            </span>
+                            <span class="stat-trend-badge">+2 This Month</span>
+                        </div>
+                        <div>
+                            <p class="staff-stat-label">Active Specialists</p>
+                            <h3 class="staff-stat-value">24</h3>
+                        </div>
+                    </div>
+                    <div class="staff-stat-card">
+                        <div class="staff-stat-header">
+                            <span class="icon-circle-bg bg-primary-fixed">
+                                <span class="material-symbols-outlined" data-icon="star">star</span>
+                            </span>
+                        </div>
+                        <div>
+                            <p class="staff-stat-label">Team Rating</p>
+                            <div class="flex-row items-center gap-2 mt-1">
+                                <h3 class="staff-stat-value text-4xl">4.9</h3>
+                                <div class="text-primary-container">
+                                    <span class="material-symbols-outlined text-sm" data-icon="star"
+                                        style="font-variation-settings: 'FILL' 1;">star</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="staff-stat-card">
+                        <div class="staff-stat-header">
+                            <span class="icon-circle-bg bg-tertiary-fixed">
+                                <span class="material-symbols-outlined"
+                                    data-icon="event_available">event_available</span>
+                            </span>
+                        </div>
+                        <div>
+                            <p class="staff-stat-label">On Shift Today</p>
+                            <h3 class="staff-stat-value text-4xl mt-1">18</h3>
+                        </div>
+                    </div>
+                </div>
+
+                                <div class="staff-directory">
+                    <div class="staff-directory-header">
+                        <h3 class="calendar-title text-2xl">Staff Directory</h3>
+                        <div class="staff-filters">
+                            <button class="filter-btn active">All Staff</button>
+                            <button class="filter-btn">Therapists</button>
+                            <button class="filter-btn">Technicians</button>
+                        </div>
+                    </div>
+
+                    <div class="staff-grid">
+                                                <div class="staff-card group-staff">
+                            <div class="staff-card-header">
+                                <div class="staff-image-wrapper">
+                                    <img class="staff-img-large"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCElF3sdomNGOH-PZurAQLHGKAUzBBngaTizFRPqbfVYAC6Xoz9LrvL_gEAXd1FJiw6OPjpOZeS32o5NXQ9-cr3jZzbkxMJEVQdA6hQ_Pqi9vywh9XJL0_F4BmXzOrxn21pt_l4Cpf-TwaBd2oFL6V3BYjyEQ9aa1bk5DuoUZ6wtHaOHeKQwOeE91BDRN4_oaFsOJQX-fb4rs2v2BnwCnV3Cy_uAx6EdMIeM7z_-IQojO0_K5xCp-S8Nl3p-Uw2wHPyzU0eUM_jEwTn" />
+                                    <span class="staff-status-dot bg-emerald"></span>
+                                </div>
+                                <div class="staff-card-meta">
+                                    <div class="staff-rating-box">
+                                        <span class="material-symbols-outlined text-lg" data-icon="star"
+                                            style="font-variation-settings: 'FILL' 1;">star</span>
+                                        <span class="staff-rating-val">4.9</span>
+                                    </div>
+                                    <span class="staff-shift-badge shift-emerald">On Shift</span>
+                                </div>
+                            </div>
+                            <div class="staff-card-body">
+                                <div class="staff-name-box">
+                                    <h4 class="staff-name">Elena Rodriguez</h4>
+                                    <p class="staff-role">Senior Esthetician</p>
+                                </div>
+                                <div class="staff-skills-box">
+                                    <span class="skill-badge">Facials</span>
+                                    <span class="skill-badge">Chemical Peels</span>
+                                    <span class="skill-badge">LED Therapy</span>
+                                </div>
+                                <div class="staff-card-footer">
+                                    <button class="btn-link-subtle">
+                                        <span class="material-symbols-outlined text-base"
+                                            data-icon="schedule">schedule</span>
+                                        See Schedule
+                                    </button>
+                                    <button class="btn-link-primary">
+                                        Details
+                                        <span class="material-symbols-outlined text-base btn-link-icon-move"
+                                            data-icon="arrow_forward">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                                                <div class="staff-card group-staff">
+                            <div class="staff-card-header">
+                                <div class="staff-image-wrapper">
+                                    <img class="staff-img-large"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUCx04LeiIiIoasS02nM4q0L0BxCLkycNDbkDtCDvwO63MYrOqhfk2uCNf7Oi7AZ_g-OSf6u_TqPgKRuW7cF68kub1yWbQDfAERkZ_VRpZd37VHUSA5hC9lw5Ae2-rjPPwvzsfB5FGLvjrYmbegkcsbp76rmMvva8de3kWA5Nyy89TiWCy57BEI1h679fO9bwCJhMuxbjqdE3W7y5mtwh4gV2BTqRszem9AT8XYUi5EqoHMLX-sbDtWUnZ08Qu42voUvEjowXDckjF" />
+                                    <span class="staff-status-dot bg-amber"></span>
+                                </div>
+                                <div class="staff-card-meta">
+                                    <div class="staff-rating-box">
+                                        <span class="material-symbols-outlined text-lg" data-icon="star"
+                                            style="font-variation-settings: 'FILL' 1;">star</span>
+                                        <span class="staff-rating-val">4.8</span>
+                                    </div>
+                                    <span class="staff-shift-badge shift-amber">On Break</span>
+                                </div>
+                            </div>
+                            <div class="staff-card-body">
+                                <div class="staff-name-box">
+                                    <h4 class="staff-name">Marcus Thorne</h4>
+                                    <p class="staff-role">Lead Massage Therapist</p>
+                                </div>
+                                <div class="staff-skills-box">
+                                    <span class="skill-badge">Thai Massage</span>
+                                    <span class="skill-badge">Deep Tissue</span>
+                                    <span class="skill-badge">Shiatsu</span>
+                                </div>
+                                <div class="staff-card-footer">
+                                    <button class="btn-link-subtle">
+                                        <span class="material-symbols-outlined text-base"
+                                            data-icon="schedule">schedule</span>
+                                        See Schedule
+                                    </button>
+                                    <button class="btn-link-primary">
+                                        Details
+                                        <span class="material-symbols-outlined text-base btn-link-icon-move"
+                                            data-icon="arrow_forward">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                                                <div class="staff-card group-staff">
+                            <div class="staff-card-header">
+                                <div class="staff-image-wrapper">
+                                    <img class="staff-img-large"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuBoC2aD6yqtUVN3rjJFU1j0vFsTAi9RbaxSZEKLCIqTy8xMvncorhEYDj6lyio-Z3_p0u_V5xg_hSsUxdSNtoi2E_E4UUQF8xnI3A_iHnmys5uMfKttDiQU2L7s93QftdPWSgaSz8hAEcJG-Z5MpgCIf8cai64I5f5iy4tNS_XEtss1BL3uYyxZhwKE4e2-N3los5fNGm_QVMn9Gn_CEWXiThUBhgVBpNWcLy7I9PlUb_Qn7wRF0lFVygqizXoyqF4gi_qEO1CPIX" />
+                                    <span class="staff-status-dot bg-muted"></span>
+                                </div>
+                                <div class="staff-card-meta">
+                                    <div class="staff-rating-box">
+                                        <span class="material-symbols-outlined text-lg" data-icon="star"
+                                            style="font-variation-settings: 'FILL' 1;">star</span>
+                                        <span class="staff-rating-val">5.0</span>
+                                    </div>
+                                    <span class="staff-shift-badge shift-muted">Off Duty</span>
+                                </div>
+                            </div>
+                            <div class="staff-card-body">
+                                <div class="staff-name-box">
+                                    <h4 class="staff-name">Sasha Lee</h4>
+                                    <p class="staff-role">Aromatherapy Specialist</p>
+                                </div>
+                                <div class="staff-skills-box">
+                                    <span class="skill-badge">Essential Oils</span>
+                                    <span class="skill-badge">Stress Relief</span>
+                                </div>
+                                <div class="staff-card-footer">
+                                    <button class="btn-link-subtle">
+                                        <span class="material-symbols-outlined text-base"
+                                            data-icon="schedule">schedule</span>
+                                        See Schedule
+                                    </button>
+                                    <button class="btn-link-primary">
+                                        Details
+                                        <span class="material-symbols-outlined text-base btn-link-icon-move"
+                                            data-icon="arrow_forward">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                                                <div class="staff-card group-staff">
+                            <div class="staff-card-header">
+                                <div class="staff-image-wrapper">
+                                    <img class="staff-img-large"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC16k77LgtUqgl5B_nP_MdTQnP5mnBamB98WsgKHT9s-mcqv_cC8Dj7sn8vcVsHzH2b5VK6tafmBcceJzef7Qqx0wci1D5g56wsSjdfbJjTok9uwpl_Cm5hPvyqDt9kbLfSA67IdvatQ48BpfBsEGN6PB1xuLRmk_uw-vR62bK90N6wH97EN_12NjffwFNhQu_xfvmM3iA4d7AdD8S1tGYbZ_P5IWHif5IS_p9jWGkrlfiaMzv3IRGG5XNmakz6cHydJOfa1bH1h958" />
+                                    <span class="staff-status-dot bg-emerald"></span>
+                                </div>
+                                <div class="staff-card-meta">
+                                    <div class="staff-rating-box">
+                                        <span class="material-symbols-outlined text-lg" data-icon="star"
+                                            style="font-variation-settings: 'FILL' 1;">star</span>
+                                        <span class="staff-rating-val">4.7</span>
+                                    </div>
+                                    <span class="staff-shift-badge shift-emerald">On Shift</span>
+                                </div>
+                            </div>
+                            <div class="staff-card-body">
+                                <div class="staff-name-box">
+                                    <h4 class="staff-name">Julian Vance</h4>
+                                    <p class="staff-role">Reflexology Technician</p>
+                                </div>
+                                <div class="staff-skills-box">
+                                    <span class="skill-badge">Foot Massage</span>
+                                    <span class="skill-badge">Hand Reflexology</span>
+                                </div>
+                                <div class="staff-card-footer">
+                                    <button class="btn-link-subtle">
+                                        <span class="material-symbols-outlined text-base"
+                                            data-icon="schedule">schedule</span>
+                                        See Schedule
+                                    </button>
+                                    <button class="btn-link-primary">
+                                        Details
+                                        <span class="material-symbols-outlined text-base btn-link-icon-move"
+                                            data-icon="arrow_forward">arrow_forward</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                                <section class="performance-section">
+                    <div class="lg-col-span-2 performance-left">
+                        <div class="mb-8">
+                            <h3 class="calendar-title text-3xl mb-2">Team Momentum</h3>
+                            <p class="text-on-surface-variant">Performance metrics across the collective over the last
+                                30 days.</p>
+                        </div>
+                        <div class="chart-card">
+                            <div class="chart-bars-wrap">
+                                <div class="chart-bar-col" style="height: 60%"></div>
+                                <div class="chart-bar-col" style="height: 45%"></div>
+                                <div class="chart-bar-col" style="height: 80%"></div>
+                                <div class="chart-bar-col chart-bar-active" style="height: 95%"></div>
+                                <div class="chart-bar-col" style="height: 70%"></div>
+                                <div class="chart-bar-col" style="height: 55%"></div>
+                                <div class="chart-bar-col" style="height: 90%"></div>
+                            </div>
+                            <div class="chart-labels">
+                                <span class="chart-label">Mon</span>
+                                <span class="chart-label">Tue</span>
+                                <span class="chart-label">Wed</span>
+                                <span class="chart-label">Thu</span>
+                                <span class="chart-label">Fri</span>
+                                <span class="chart-label">Sat</span>
+                                <span class="chart-label">Sun</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="star-performer-card">
+                                                <div class="star-performer-bg"></div>
+                        <div class="performer-content">
+                            <h4 class="performer-title">Star Performer</h4>
+                            <div class="performer-main-info">
+                                <img class="performer-avatar"
+                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtzskvQRye77YI9GVzrkF4Yfu23yZ2se8Be-U0qSAKYF_KBkKMFON0F24XiKoniDMbDgKw7_zMXJ6r00MljfLA1Yo5u8JH6ODyab3PeqTAGHkq9IXazIT4TUU9eL2P4n98XKnH1_hC7dXUoekVI3GY59Q9j3wvQHeaKRI_kOYqCKKdZG1Cb4bXoMCR9SsiWMCHwj3w_9nVRPYVNtgfoX8KFRNGbVR5o1WggXN3QfE9olM0yv9BiKQDcGFI5D0m0xPJBD2DRPeJmFMF" />
+                                <div>
+                                    <p class="performer-name">Sasha Lee</p>
+                                    <p class="performer-desc">114 Bookings this month</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="performer-content mt-12">
+                            <div class="performer-stats-box">
+                                <p class="performer-stat-label">Efficiency</p>
+                                <p class="performer-stat-val">98.2%</p>
+                            </div>
+                            <button class="btn-white-bold">
+                                View Performance Data
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+                        <footer class="page-footer-full">
+                <div class="footer-inner">
+                    <div class="footer-brand-info">
+                        <span class="footer-brand-title">Velvet Bloom</span>
+                        <span class="footer-version">Administrative Console v2.4</span>
+                    </div>
+                    <div class="footer-nav-links">
+                        <a href="#">Privacy</a>
+                        <a href="#">Staff Policies</a>
+                        <a href="#">Support</a>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+                <button class="fab-btn-mobile shadow-lg-primary">
+            <span class="material-symbols-outlined text-3xl" data-icon="add">add</span>
+        </button>
+    </div>
+</body>
+
+</html>

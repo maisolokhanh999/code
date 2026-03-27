@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Appointments | Velvet Bloom</title>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="app-container">
+                <aside class="sidebar" id="sidebar">
+            <div class="sidebar-brand">
+                <h1 class="brand-title">Velvet Bloom</h1>
+                <p class="brand-subtitle">Digital Sanctuary</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a class="nav-item" href="index.html">
+                    <span class="material-symbols-outlined nav-icon" data-icon="dashboard">dashboard</span>
+                    <span class="nav-text">Dashboard</span>
+                </a>
+                                <a class="nav-item active" href="#">
+                    <span class="material-symbols-outlined nav-icon" data-icon="calendar_month">calendar_month</span>
+                    <span class="nav-text">Appointments</span>
+                </a>
+                <a class="nav-item" href="services.html">
+                    <span class="material-symbols-outlined nav-icon" data-icon="spa">spa</span>
+                    <span class="nav-text">Services</span>
+                </a>
+                <a class="nav-item" href="staff.html">
+                    <span class="material-symbols-outlined nav-icon" data-icon="group">group</span>
+                    <span class="nav-text">Staff</span>
+                </a>
+            </nav>
+            <div class="sidebar-action">
+                <button class="btn btn-primary btn-block">
+                    Book Appointment
+                </button>
+            </div>
+            <div class="sidebar-footer">
+                <a class="footer-link" href="#">
+                    <span class="material-symbols-outlined" data-icon="help">help</span>
+                    <span class="footer-text">Help Center</span>
+                </a>
+                <a class="footer-link" href="#">
+                    <span class="material-symbols-outlined" data-icon="logout">logout</span>
+                    <span class="footer-text">Sign Out</span>
+                </a>
+            </div>
+        </aside>
+
+                <main class="main-content">
+                        <header class="topbar">
+                <div class="topbar-left">
+                    <div class="menu-toggle" id="menuToggle">
+                        <span class="material-symbols-outlined text-primary" data-icon="menu">menu</span>
+                    </div>
+                    <div class="topbar-search w-full">
+                        <span class="material-symbols-outlined search-icon text-lg" data-icon="search">search</span>
+                        <input class="search-input w-full" placeholder="Search appointments or clients..."
+                            type="text" />
+                    </div>
+                </div>
+                <div class="topbar-right">
+                    <button class="icon-btn relative">
+                        <span class="material-symbols-outlined icon-color"
+                            data-icon="notifications">notifications</span>
+                        <span class="notification-dot"></span>
+                    </button>
+                    <button class="icon-btn">
+                        <span class="material-symbols-outlined icon-color" data-icon="settings">settings</span>
+                    </button>
+                    <div class="user-avatar border border-outline-variant">
+                        <img alt="User profile"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAlvvkLxhYc1L8dLurQzTojLY8ORJ6Py_AGcoSIyrwLUeWcnJxjC7_NyFxoHwBGY1etgyxHo12bTezrireF6phyuGheNrvIsC0-uZm4NwtpdUe6TiZb2ipH7BCRIDYZCcxG-7bEN4xLREdhyqfsItGZ1V0gAcpKaAgsr7KwRy9rTYrGc5PJEfDx5yEKNhmQzhpJmv1g50f4wNJJ9_3PopPeDecpzxyQj4Q5fugT3OYbxkK0TONGJmWupk4GFCZrkwQbmnQo4kPonspC" />
+                    </div>
+                </div>
+            </header>
+
+                        <div class="dashboard-canvas">
+                                <div class="page-header mb-10">
+                    <div class="page-header-text">
+                        <h2 class="page-title text-4xl mb-2">Appointments</h2>
+                        <p class="text-on-surface-variant font-medium">Manage your sanctuary's flow for today.</p>
+                    </div>
+                    <button class="btn btn-primary btn-pill with-btn-icon shadow-sm">
+                        <span class="material-symbols-outlined" data-icon="add">add</span>
+                        New Appointment
+                    </button>
+                </div>
+
+                                <section class="calendar-section">
+                    <div class="calendar-header">
+                        <h3 class="calendar-title">September 2024</h3>
+                        <div class="calendar-nav">
+                            <button class="calendar-btn">
+                                <span class="material-symbols-outlined" data-icon="chevron_left">chevron_left</span>
+                            </button>
+                            <button class="calendar-btn">
+                                <span class="material-symbols-outlined" data-icon="chevron_right">chevron_right</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="calendar-strip">
+                                                <div class="date-card">
+                            <span class="date-day">Mon</span>
+                            <span class="date-number">12</span>
+                        </div>
+                                                <div class="date-card">
+                            <span class="date-day">Tue</span>
+                            <span class="date-number">13</span>
+                        </div>
+                                                <div class="date-card active">
+                            <span class="date-day">Wed</span>
+                            <span class="date-number">14</span>
+                        </div>
+                                                <div class="date-card">
+                            <span class="date-day">Thu</span>
+                            <span class="date-number">15</span>
+                        </div>
+                                                <div class="date-card">
+                            <span class="date-day">Fri</span>
+                            <span class="date-number">16</span>
+                        </div>
+                                                <div class="date-card">
+                            <span class="date-day">Sat</span>
+                            <span class="date-number">17</span>
+                        </div>
+                                                <div class="date-card">
+                            <span class="date-day">Sun</span>
+                            <span class="date-number">18</span>
+                        </div>
+                    </div>
+                </section>
+
+                                <section class="appointment-list-card">
+                    <div class="table-container-scroll">
+                        <div class="table-header-grid">
+                            <div class="col-time">Time</div>
+                            <div class="col-client">Client</div>
+                            <div class="col-service">Service</div>
+                            <div class="col-specialist">Specialist</div>
+                            <div class="col-status text-right">Status</div>
+                        </div>
+
+                        <div class="apt-list">
+                                                        <div class="appointment-row">
+                                <div class="col-time">
+                                    <p class="apt-time-label text-primary">09:00 AM</p>
+                                    <p class="apt-duration">60 mins</p>
+                                </div>
+                                <div class="col-client flex-row gap-3">
+                                    <div class="avatar-circle badge-secondary">EM</div>
+                                    <div>
+                                        <p class="client-name">Elena Mistral</p>
+                                        <p class="client-type">First-time visitor</p>
+                                    </div>
+                                </div>
+                                <div class="col-service">
+                                    <span class="service-badge">Silk Ritual Massage</span>
+                                </div>
+                                <div class="col-specialist flex-row gap-2">
+                                    <img alt="Staff" class="staff-img"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFAE-kVG7JViyva5FgInOL9Q6Ay8pcT-LFwUU312sVmSLPBU-mCgXQPqCNUxUndgsla2QnesMbbq5ZKXVV8QsG3wLZjSzWTxBwmcXnVS1gQqjxknX2NZRWyF7LYcc1-YeXr9Xt6-k22Ttf_F3f8bU864bwlX-EEc6jM3V4x4ibGFhQfPBY5dsIMumtIaaQLl8zA1hxgvnSYdvvnjLJSrjJAfjt1mr1iwsV890D-EOF1S8BzneEZK1bSEAhVPAG6Too9nsqJ62q2ODD" />
+                                    <p class="staff-name">Clara S.</p>
+                                </div>
+                                <div class="col-status text-right">
+                                    <span class="status-badge status-confirmed">Confirmed</span>
+                                </div>
+                            </div>
+
+                                                        <div class="appointment-row bg-surface-container-low hover-bg-surface-container">
+                                <div class="col-time">
+                                    <p class="apt-time-label">10:30 AM</p>
+                                    <p class="apt-duration">90 mins</p>
+                                </div>
+                                <div class="col-client flex-row gap-3">
+                                    <div class="avatar-circle badge-tertiary">JW</div>
+                                    <div>
+                                        <p class="client-name">Julian Weaver</p>
+                                        <p class="client-type">VIP Member</p>
+                                    </div>
+                                </div>
+                                <div class="col-service">
+                                    <span class="service-badge">Deep Tissue Therapy</span>
+                                </div>
+                                <div class="col-specialist flex-row gap-2">
+                                    <img alt="Staff" class="staff-img"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDftVSENgVt1Rqvdk1gsiGyol61-bnga_fsMIAudK-CIzkLmrDPXY6qCBc0FkRg8z7Nk35R5Dhcmplez1aAWueuQELfMmejLwhyg8FybwoUAzrV_vn79Jlm7lA7YF9E9NxV0C6aluYBuJuQ2UTzjbN0rBXHdFbywrRHO7OYP0Sxfp5GQG7XHS47em5Ai-RKiv2EmLjybZjKCXVWPCw0jV5IcQ4A09LfPaJ6IUUgT1RHeqIuDqYAIwxa1BchPoDKf-XE7_SSCH5vtfK5" />
+                                    <p class="staff-name">Marcus T.</p>
+                                </div>
+                                <div class="col-status text-right">
+                                    <span class="status-badge status-pending">Pending</span>
+                                </div>
+                            </div>
+
+                                                        <div class="appointment-row opacity-60">
+                                <div class="col-time opacity-50">
+                                    <p class="apt-time-label line-through">08:00 AM</p>
+                                    <p class="apt-duration">Completed</p>
+                                </div>
+                                <div class="col-client flex-row gap-3">
+                                    <div class="avatar-circle bg-outline-variant text-on-surface">SR</div>
+                                    <div>
+                                        <p class="client-name">Sophia Rossi</p>
+                                        <p class="client-type">Regular</p>
+                                    </div>
+                                </div>
+                                <div class="col-service">
+                                    <span class="service-badge">Radiance Facial</span>
+                                </div>
+                                <div class="col-specialist flex-row gap-2">
+                                    <img alt="Staff" class="staff-img"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCw9anWpJHKw06q1nKXhkx5hQ-UANwWh_2FX-yAYArV0dKhXCRrvkcbQXa9d3qS6TGUQzTJNwkZBwx8EkRtz7d47DSf36LhkOK_Mhl39-HI_OxKCnDVhFh65NMsfQBKg2YK64YAai_vvPUVl6iSJP62kXQ_KkxE5hu369qXmsUlOsEq9wUVCUsU6zQtR4uz5Fo5wy7ZTxA74Gp9DqcbW7_Conng-ifwr7QjSGD44uNSvDBXPcuQoIAHS2ZamuQrxQxYAwsPpATmh0In" />
+                                    <p class="staff-name">Lila K.</p>
+                                </div>
+                                <div class="col-status text-right">
+                                    <span class="status-badge status-completed">Completed</span>
+                                </div>
+                            </div>
+
+                                                        <div class="appointment-row">
+                                <div class="col-time">
+                                    <p class="apt-time-label text-primary">01:00 PM</p>
+                                    <p class="apt-duration">45 mins</p>
+                                </div>
+                                <div class="col-client flex-row gap-3">
+                                    <div class="avatar-circle badge-primary-alt">AB</div>
+                                    <div>
+                                        <p class="client-name">Amara Benet</p>
+                                        <p class="client-type">Referred by Staff</p>
+                                    </div>
+                                </div>
+                                <div class="col-service">
+                                    <span class="service-badge">Himalayan Salt Scrub</span>
+                                </div>
+                                <div class="col-specialist flex-row gap-2">
+                                    <img alt="Staff" class="staff-img"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_uq1f45Xpw2ZO_ca_bj-JropCP0Vtzhp9dJ7RRV8YnWcd34Zd9pAk6IKZ6mEDZO5CSkHus0BEkR4ytbDLFRGm8EbmmNtpljboGssvsqxLIIIbQMUk8Cv_44fVdGvc4a9IJHbB6TQDYfPcdw5O-mWs9fYaAaMmdpViMSJVTciZzX-c9aFhMosxwtcTOEDJnNlhsYbHvI6umqKU9EuxM94BldAmtJHFbZWGBuIGPzusO-Im2ZlKPmdiQSgUf0kVXmvT_ol4zzHommns" />
+                                    <p class="staff-name">Clara S.</p>
+                                </div>
+                                <div class="col-status text-right">
+                                    <span class="status-badge status-confirmed">Confirmed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="appointment-footer">
+                        <button class="view-all-btn">
+                            View all appointments
+                            <span class="material-symbols-outlined text-sm"
+                                data-icon="arrow_forward">arrow_forward</span>
+                        </button>
+                    </div>
+                </section>
+
+                                <section class="quick-stats-grid">
+                    <div class="quick-stat-card border-l-primary">
+                        <p class="quick-stat-label">Today's Capacity</p>
+                        <div class="quick-stat-value-row">
+                            <h4 class="quick-stat-value">84%</h4>
+                            <span class="quick-stat-meta text-primary">+12% vs last Wed</span>
+                        </div>
+                    </div>
+
+                    <div class="quick-stat-card border-l-tertiary">
+                        <p class="quick-stat-label">Pending Requests</p>
+                        <div class="quick-stat-value-row">
+                            <h4 class="quick-stat-value">05</h4>
+                            <span class="quick-stat-meta">Average wait: 2h</span>
+                        </div>
+                    </div>
+
+                    <div class="quick-stat-card border-l-secondary">
+                        <p class="quick-stat-label">Staff Availability</p>
+                        <div class="quick-stat-value-row">
+                            <h4 class="quick-stat-value">12/14</h4>
+                            <span class="quick-stat-meta">Specialists on duty</span>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+
+                <nav class="bottom-nav">
+            <a class="bottom-nav-item" href="index.html">
+                <span class="material-symbols-outlined nav-icon" data-icon="dashboard">dashboard</span>
+                <span class="bottom-nav-text">Home</span>
+            </a>
+            <a class="bottom-nav-item active" href="appointments.html">
+                <span class="material-symbols-outlined nav-icon" data-icon="calendar_month"
+                    style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+                <span class="bottom-nav-text">Booking</span>
+            </a>
+            <a class="bottom-nav-item" href="Services.html">
+                <span class="material-symbols-outlined nav-icon" data-icon="spa">spa</span>
+                <span class="bottom-nav-text">Services</span>
+            </a>
+            <a class="bottom-nav-item" href="#">
+                <span class="material-symbols-outlined nav-icon" data-icon="group">group</span>
+                <span class="bottom-nav-text">Staff</span>
+            </a>
+        </nav>
+    </div>
+</body>
+
+</html>

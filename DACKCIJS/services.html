@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Velvet Bloom | Services Management</title>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="app-container">
+                <aside class="sidebar" id="sidebar">
+            <div class="sidebar-brand">
+                <h1 class="brand-title">Velvet Bloom</h1>
+                <p class="brand-subtitle">Digital Sanctuary</p>
+            </div>
+            <nav class="sidebar-nav">
+                <a class="nav-item" href="index.html">
+                    <span class="material-symbols-outlined nav-icon" data-icon="dashboard">dashboard</span>
+                    <span class="nav-text">Dashboard</span>
+                </a>
+                <a class="nav-item" href="appointments.html">
+                    <span class="material-symbols-outlined nav-icon" data-icon="calendar_month">calendar_month</span>
+                    <span class="nav-text">Appointments</span>
+                </a>
+                                <a class="nav-item active" href="#">
+                    <span class="material-symbols-outlined nav-icon" data-icon="spa">spa</span>
+                    <span class="nav-text">Services</span>
+                </a>
+                <a class="nav-item" href="staff.html">
+                    <span class="material-symbols-outlined nav-icon" data-icon="group">group</span>
+                    <span class="nav-text">Staff</span>
+                </a>
+            </nav>
+            <div class="sidebar-action">
+                <button class="btn btn-primary btn-block">
+                    Book Appointment
+                </button>
+            </div>
+            <div class="sidebar-footer">
+                <a class="footer-link" href="#">
+                    <span class="material-symbols-outlined" data-icon="help">help</span>
+                    <span class="footer-text">Help Center</span>
+                </a>
+                <a class="footer-link" href="#">
+                    <span class="material-symbols-outlined" data-icon="logout">logout</span>
+                    <span class="footer-text">Sign Out</span>
+                </a>
+            </div>
+        </aside>
+
+                <main class="main-content">
+                        <header class="topbar">
+                <div class="topbar-left">
+                    <div class="menu-toggle" id="menuToggle">
+                        <span class="material-symbols-outlined text-primary" data-icon="menu">menu</span>
+                    </div>
+                    <div class="topbar-search">
+                        <span class="material-symbols-outlined search-icon" data-icon="search">search</span>
+                        <input class="search-input" placeholder="Search services..." type="text" />
+                    </div>
+                </div>
+                <div class="topbar-right">
+                    <button class="icon-btn">
+                        <span class="material-symbols-outlined icon-color"
+                            data-icon="notifications">notifications</span>
+                    </button>
+                    <button class="icon-btn">
+                        <span class="material-symbols-outlined icon-color" data-icon="settings">settings</span>
+                    </button>
+                    <div class="user-avatar">
+                        <img alt="User profile"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9q75aRZAXN5jYaRHGhxcq8BLc6fLnLBW5WzE-pDZZQ5Z_pQ34o-ixxK6nEViDyltmUUNDwmkAtpqzuGOEPLR6egk06hm9L6viaiMszefRhakgzPD-5lgcjflvjbGXp3NJhngFi3FsJUxwy0evRob0_gBJ2ocltp6U4TgLdaK2CKV44cQWlDjFiDKwXxChHHKypynO4t8Scas5OPldynUoIOT4D4sUOPw0IBzAHEdbMiQ6hBQWToU19p4nnWu1c3C4LPGgXPtKjeNK" />
+                    </div>
+                </div>
+            </header>
+
+                        <div class="dashboard-canvas">
+                                <section class="page-header">
+                    <div class="page-header-text">
+                        <span class="page-subtitle">Curated Offerings</span>
+                        <h2 class="page-title">Service Management</h2>
+                    </div>
+                    <button class="btn btn-primary btn-pill with-icon shadow-sm">
+                        <span class="material-symbols-outlined">add</span>
+                        Add New Service
+                    </button>
+                </section>
+
+                                <section class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <p class="stat-label">Active Services</p>
+                            <h3 class="stat-value">24</h3>
+                        </div>
+                        <div class="stat-icon-box bg-primary-light">
+                            <span class="material-symbols-outlined text-primary" data-icon="spa">spa</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <p class="stat-label">Avg. Price</p>
+                            <h3 class="stat-value">$145</h3>
+                        </div>
+                        <div class="stat-icon-box bg-secondary-light">
+                            <span class="material-symbols-outlined text-secondary" data-icon="payments">payments</span>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-info">
+                            <p class="stat-label">Categories</p>
+                            <h3 class="stat-value">6</h3>
+                        </div>
+                        <div class="stat-icon-box bg-tertiary-light">
+                            <span class="material-symbols-outlined text-tertiary" data-icon="category">category</span>
+                        </div>
+                    </div>
+                </section>
+
+                                <div class="services-list">
+                                        <section class="category-section">
+                        <div class="category-header">
+                            <h4 class="category-title">Facial Spa</h4>
+                            <div class="category-line"></div>
+                        </div>
+                        <div class="services-grid">
+                                                        <div class="service-card">
+                                <div class="service-image-container">
+                                    <img alt="Rose Quartz Glow" class="service-image"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6fuYhfhZMpXAhN33PszvaF0ON8Rf_wwmGIThYjWWPZUBK049ZIr4QMnpkh4XWe1eTNWft1gM68oFh8dZOqk7Kb462GVIfA4IRS1gq1urlWLGQtucX3QcobhJc-gcugRQhjjVTrPUTIU-grsf-WK0rpWuzaTdEH77zycN9i-JMGrnjVwjLk4MdE8IiltLWGPigsiDXHTSAWq9SSmgPL_FoMNGXwlKfsYPlgYkohpZiqZjjPcvUpsWSrf__j1Kt0RW5vu0dyOSIlTsB" />
+                                    <div class="service-actions">
+                                        <button class="action-btn-circle">
+                                            <span class="material-symbols-outlined text-sm">edit</span>
+                                        </button>
+                                        <button class="action-btn-circle icon-tertiary-color">
+                                            <span class="material-symbols-outlined text-sm"
+                                                style="font-variation-settings: 'FILL' 1;">visibility</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="service-info">
+                                    <div class="service-title-row">
+                                        <h5 class="service-title">Rose Quartz Glow</h5>
+                                        <span class="service-price">$120</span>
+                                    </div>
+                                    <p class="service-desc">A revitalizing facial using semi-precious rose quartz stones
+                                        to stimulate circulation and boost natural radiance.</p>
+                                    <div class="service-meta">
+                                        <div class="service-duration">
+                                            <span class="material-symbols-outlined text-sm">schedule</span>
+                                            <span class="duration-text">60 mins</span>
+                                        </div>
+                                        <span class="badge badge-secondary">Bestseller</span>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="service-card">
+                                <div class="service-image-container">
+                                    <img alt="Botanical Hydra-Lift" class="service-image"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeVuv5rS3B7BPHlChyTZn4A0NxTRJOMJXMfTwhOQnGUZpSWMk0m6iG96fQUROSGMSIBWlzHEKa2Pj42js0kdSMQwsig0IROxnKWk9D44TM8gIzCKj6vD8bTEeXk46UrtUxD68ucI0QsTRwm2RW7l_9I4dEkbSPAXQ1h8v1eb18wmBGv5la3n94GXi97zcVw7iWCKOTLEKcfeT_2CIKtyU3rotGbR9aeY5DQNAuKru0vGey4TlZJEb5Az50ndV2mcTW7oT1sLg60P6H" />
+                                    <div class="service-actions">
+                                        <button class="action-btn-circle">
+                                            <span class="material-symbols-outlined text-sm">edit</span>
+                                        </button>
+                                        <button class="action-btn-circle icon-tertiary-color">
+                                            <span class="material-symbols-outlined text-sm"
+                                                style="font-variation-settings: 'FILL' 1;">visibility</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="service-info">
+                                    <div class="service-title-row">
+                                        <h5 class="service-title">Botanical Hydra-Lift</h5>
+                                        <span class="service-price">$145</span>
+                                    </div>
+                                    <p class="service-desc">Organic botanical extracts combined with hydration therapy
+                                        to firm and deeply nourish tired skin.</p>
+                                    <div class="service-meta">
+                                        <div class="service-duration">
+                                            <span class="material-symbols-outlined text-sm">schedule</span>
+                                            <span class="duration-text">75 mins</span>
+                                        </div>
+                                        <span class="badge badge-surface">Premium</span>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="service-card">
+                                <div class="service-image-container">
+                                    <img alt="Vitamin C Brightening" class="service-image"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzaIipTt6WgA-QRZ5IMH8jJR1jnPECDP0O7_EmM6pq43oeNpK8FTs5jxMPFWNcCTu1Hp5gFhf-KKYFL4c0mzcynQCQWjpnlhl4fuo3LFRfcQyrzcncLH5a-HSABEXxyNr50aQK9ZouP0LD5C7OaZqskGqbS_0dqnhOfWHu08TIAbwxywEPnF20JM_o7XLY-ktkKTxdEMrkY1v82goGKjiAHAoIcNkiLX5ImP-OMVCLl2R25TpInV2YAy8OvpqGvhoT6o-zHiNRbPJg" />
+                                    <div class="service-actions z-20">
+                                        <button class="action-btn-circle">
+                                            <span class="material-symbols-outlined text-sm">edit</span>
+                                        </button>
+                                        <button class="action-btn-circle icon-muted">
+                                            <span class="material-symbols-outlined text-sm">visibility_off</span>
+                                        </button>
+                                    </div>
+                                    <div class="service-overlay">
+                                        <span class="badge badge-inverse">Draft</span>
+                                    </div>
+                                </div>
+                                <div class="service-info opacity-medium">
+                                    <div class="service-title-row">
+                                        <h5 class="service-title">Vitamin C Brightening</h5>
+                                        <span class="service-price">$110</span>
+                                    </div>
+                                    <p class="service-desc">Intensive treatment using pure L-ascorbic acid to target
+                                        pigmentation and uneven skin tone.</p>
+                                    <div class="service-meta">
+                                        <div class="service-duration">
+                                            <span class="material-symbols-outlined text-sm">schedule</span>
+                                            <span class="duration-text">45 mins</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                                        <section class="category-section">
+                        <div class="category-header">
+                            <h4 class="category-title">Massages</h4>
+                            <div class="category-line"></div>
+                        </div>
+                        <div class="services-grid">
+                                                        <div class="service-card">
+                                <div class="service-image-container">
+                                    <img alt="Deep Tissue Therapy" class="service-image"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAtxnLiTUMTeoh1oeyFJ3zNToekRoF35Vk-_lx79JOkoy4N8jc46D9YaF7vk7JqcoqRxOanx3XxDOyO6Bnj0HWZiSi2Bu1twD7JRz5o5wdGMQI-PHMm80WX_ffhjWq3CXxGq9GmG3ob9DVi0VEQM5lEFMo6c8Mls6gWMWZOQGhaiL4fjxhVtbwNUbvKY3wXwUTHBid4hsFS9KRTMXW3hBLCvGcHx1XMbi_OWnA8kQcAFOS95wD_p4bw7xeEZ5EIxEPeG8chnVKjKCHn" />
+                                    <div class="service-actions">
+                                        <button class="action-btn-circle">
+                                            <span class="material-symbols-outlined text-sm">edit</span>
+                                        </button>
+                                        <button class="action-btn-circle icon-tertiary-color">
+                                            <span class="material-symbols-outlined text-sm"
+                                                style="font-variation-settings: 'FILL' 1;">visibility</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="service-info">
+                                    <div class="service-title-row">
+                                        <h5 class="service-title">Deep Tissue Therapy</h5>
+                                        <span class="service-price">$160</span>
+                                    </div>
+                                    <p class="service-desc">Targeted pressure focused on the deepest layers of muscle
+                                        tissue and tendons to release chronic tension.</p>
+                                    <div class="service-meta">
+                                        <div class="service-duration">
+                                            <span class="material-symbols-outlined text-sm">schedule</span>
+                                            <span class="duration-text">90 mins</span>
+                                        </div>
+                                        <span class="badge badge-tertiary">Highly Rated</span>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="service-card">
+                                <div class="service-image-container">
+                                    <img alt="Lavender Zen" class="service-image"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7GMGb4D4ydJHztFf53yvGNsIpC2A19McbB6nx-5FfZDGwJ97QTwTsb9yVpMcMQHOTVIQwBgajckJXZEXbSS0lB3GZ2mXyU-znxb7V0B_sLfXeEy3lgyNk8jDaj7sNjFJbA70dty5fjpzmrQG_j5NWdTS1n_XFO6tOcfbellF2XcO8wYEgTVMqkRrgEQNP4KOo-RKlQnKzyHXX6AahU9EpbXhzIHWBKFGRevKrMVXRhC9mpZxOenLOKhWhRcUteE-7AnDEZwIN6sx_" />
+                                    <div class="service-actions">
+                                        <button class="action-btn-circle">
+                                            <span class="material-symbols-outlined text-sm">edit</span>
+                                        </button>
+                                        <button class="action-btn-circle icon-tertiary-color">
+                                            <span class="material-symbols-outlined text-sm"
+                                                style="font-variation-settings: 'FILL' 1;">visibility</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="service-info">
+                                    <div class="service-title-row">
+                                        <h5 class="service-title">Lavender Zen</h5>
+                                        <span class="service-price">$130</span>
+                                    </div>
+                                    <p class="service-desc">A soothing Swedish-style massage infused with calming
+                                        lavender essential oils for ultimate relaxation.</p>
+                                    <div class="service-meta">
+                                        <div class="service-duration">
+                                            <span class="material-symbols-outlined text-sm">schedule</span>
+                                            <span class="duration-text">60 mins</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="service-add-card pointer-cursor">
+                                <div class="add-icon-circle">
+                                    <span class="material-symbols-outlined">add_circle</span>
+                                </div>
+                                <span class="add-title">New Service in Category</span>
+                                <p class="add-desc">Add a specific massage offering</p>
+                            </div>
+                        </div>
+                    </section>
+
+                                        <section class="category-section">
+                        <div class="category-header">
+                            <h4 class="category-title">Body Treatments</h4>
+                            <div class="category-line"></div>
+                        </div>
+                        <div class="services-grid">
+                                                        <div class="service-card">
+                                <div class="service-image-container">
+                                    <img alt="Pink Himalayan Scrub" class="service-image"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZcjm5D-FuoVDyUnlgyz7HSelZGT1x7iJ8XxHMnk9LMjB-0986h3DVCQuLAJHNKMQT6S-Win3U6yGerpmgVE0zO0wIsEVHt0FvRjDuF1xaTasMb9Z5K-yTKY6FTpTqgrzjbqWbMLJpJyaf_BB8EZuB1MRmpj1-k7DBQGfO2ci4QXTPAe4-SVfPm_jQ7-L_YHOztlHXZzLCPhEgSEeExV4JDOeMnzI6DhCiOtpFzruyTv2SWu--BAhhdx2IfkZ1C5qUdDQbMRhKQEL0" />
+                                    <div class="service-actions">
+                                        <button class="action-btn-circle">
+                                            <span class="material-symbols-outlined text-sm">edit</span>
+                                        </button>
+                                        <button class="action-btn-circle icon-tertiary-color">
+                                            <span class="material-symbols-outlined text-sm"
+                                                style="font-variation-settings: 'FILL' 1;">visibility</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="service-info">
+                                    <div class="service-title-row">
+                                        <h5 class="service-title">Pink Himalayan Scrub</h5>
+                                        <span class="service-price">$95</span>
+                                    </div>
+                                    <p class="service-desc">Exfoliating body treatment using mineral-rich salt to
+                                        detoxify and smooth the entire body.</p>
+                                    <div class="service-meta">
+                                        <div class="service-duration">
+                                            <span class="material-symbols-outlined text-sm">schedule</span>
+                                            <span class="duration-text">45 mins</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                                        <div class="service-card">
+                                <div class="service-image-container">
+                                    <img alt="Silk &amp; Honey Wrap" class="service-image"
+                                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAvpy5y2UxLtfNefjjVAUdIF8WO1qYK_WfsFzyWTytMdh8RZSt7MOYJGSpzoO8uZT1oIDr4RS8E0Zy9upRxs8PyXdysX1h_cFkmoidI0cPN-QIp8vvlT0EfY1czg6u_nXk-UJZZGqGvhT6O59MYSAVCaRodkvTysTtpO77RmDLj8_gkYNDC8OQByuEXDDqxaIMlnZFXb10yIT23XY5aIoPQfJnhyXsuSKwrqjC76xBTvz5W1QMr5B1sMuvZr38iK3wG3rcEYZ3t1JH3" />
+                                    <div class="service-actions">
+                                        <button class="action-btn-circle">
+                                            <span class="material-symbols-outlined text-sm">edit</span>
+                                        </button>
+                                        <button class="action-btn-circle icon-tertiary-color">
+                                            <span class="material-symbols-outlined text-sm"
+                                                style="font-variation-settings: 'FILL' 1;">visibility</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="service-info">
+                                    <div class="service-title-row">
+                                        <h5 class="service-title">Silk &amp; Honey Wrap</h5>
+                                        <span class="service-price">$180</span>
+                                    </div>
+                                    <p class="service-desc">Luxurious full-body cocoon wrap using raw honey and silk
+                                        proteins for deep hydration.</p>
+                                    <div class="service-meta">
+                                        <div class="service-duration">
+                                            <span class="material-symbols-outlined text-sm">schedule</span>
+                                            <span class="duration-text">90 mins</span>
+                                        </div>
+                                        <span class="badge badge-primary-alt">Luxury</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                                <div class="page-footer-actions">
+                    <p class="footer-meta-text">Showing 7 of 24 active services across 3 categories.</p>
+                    <div class="footer-buttons">
+                        <button class="btn-text">Export Catalog</button>
+                        <button class="btn-text">Bulk Visibility</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>

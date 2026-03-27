@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Velvet Bloom | Admin Dashboard</title>
+        <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="app-container">
+                <aside class="sidebar" id="sidebar">
+            <div class="sidebar-brand">
+                <h1 class="brand-title">Velvet Bloom</h1>
+                <p class="brand-subtitle">Digital Sanctuary</p>
+            </div>
+            <nav class="sidebar-nav">
+                                <a class="nav-item active" href="#">
+                    <span class="material-symbols-outlined nav-icon" data-icon="dashboard">dashboard</span>
+                    <span class="nav-text">Dashboard</span>
+                </a>
+                                <a class="nav-item" href="appointments.html">
+                    <span class="material-symbols-outlined nav-icon" data-icon="calendar_month">calendar_month</span>
+                    <span class="nav-text">Appointments</span>
+                </a>
+                                <a class="nav-item" href="services.html">
+                    <span class="material-symbols-outlined nav-icon" data-icon="spa">spa</span>
+                    <span class="nav-text">Services</span>
+                </a>
+                                <a class="nav-item" href="staff.html">
+                    <span class="material-symbols-outlined nav-icon" data-icon="group">group</span>
+                    <span class="nav-text">Staff</span>
+                </a>
+            </nav>
+            <div class="sidebar-action">
+                <button class="btn btn-primary btn-block">
+                    Book Appointment
+                </button>
+            </div>
+            <div class="sidebar-footer">
+                <a class="footer-link" href="#">
+                    <span class="material-symbols-outlined" data-icon="help">help</span>
+                    <span class="footer-text">Help Center</span>
+                </a>
+                <a class="footer-link" href="#">
+                    <span class="material-symbols-outlined" data-icon="logout">logout</span>
+                    <span class="footer-text">Sign Out</span>
+                </a>
+            </div>
+        </aside>
+
+                <main class="main-content">
+                        <header class="topbar">
+                <div class="topbar-left">
+                    <div class="menu-toggle" id="menuToggle">
+                        <span class="material-symbols-outlined text-primary" data-icon="menu">menu</span>
+                    </div>
+                    <h2 class="topbar-title">Velvet Bloom</h2>
+                </div>
+                <div class="topbar-right">
+                    <button class="icon-btn">
+                        <span class="material-symbols-outlined icon-color"
+                            data-icon="notifications">notifications</span>
+                    </button>
+                    <button class="icon-btn">
+                        <span class="material-symbols-outlined icon-color" data-icon="settings">settings</span>
+                    </button>
+                    <div class="user-avatar">
+                        <img alt="User profile"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqhEAbA4EXQ7wG2xvoayV5VENUqboy7giqs1GlJUIa_3u_BbPBqbRs7Jv40jrsBLoI7IzOO34MVmG2jMm_JvMzLTahfZv7T3jE105gwRPOZ0QBM6wAT0__PLqxOVtrE1-o7c1ROxK1L58-dO6I6o8aRw7sRW27n7rmKnRfwtTgoXy9EY_lMqg4C1yHovxdiTHL0kplZ3kLkPRuJPu-emGElYiDDi5Q1F3cNSS0XGamNVaRf0gwafPCHENnGU8XGYSPdOCVF2dQ6K_b" />
+                    </div>
+                </div>
+            </header>
+
+                        <div class="dashboard-canvas">
+                                <section class="welcome-section">
+                    <h3 class="welcome-title">Good Morning, Elena</h3>
+                    <p class="welcome-subtitle">Your sanctuary is flourishing today. You have 12 appointments scheduled.
+                    </p>
+                </section>
+
+                                <section class="metrics-grid">
+                                        <div class="metric-card">
+                        <div class="metric-header">
+                            <div class="metric-icon-box icon-primary">
+                                <span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+                            </div>
+                            <span class="metric-badge badge-tertiary">+12%</span>
+                        </div>
+                        <p class="metric-label">Total Appointments</p>
+                        <h4 class="metric-value">158</h4>
+                        <p class="metric-trend">Current month vs last month</p>
+                    </div>
+                                        <div class="metric-card">
+                        <div class="metric-header">
+                            <div class="metric-icon-box icon-secondary">
+                                <span class="material-symbols-outlined" data-icon="payments">payments</span>
+                            </div>
+                            <span class="metric-badge badge-primary">+8.4%</span>
+                        </div>
+                        <p class="metric-label">Monthly Revenue</p>
+                        <h4 class="metric-value">$24,850</h4>
+                        <p class="metric-trend">Projected growth trend: Stable</p>
+                    </div>
+                                        <div class="metric-card">
+                        <div class="metric-header">
+                            <div class="metric-icon-box icon-tertiary">
+                                <span class="material-symbols-outlined" data-icon="person_add">person_add</span>
+                            </div>
+                            <span class="metric-badge badge-tertiary-alt">+24</span>
+                        </div>
+                        <p class="metric-label">New Customers</p>
+                        <h4 class="metric-value">42</h4>
+                        <p class="metric-trend">New registrations this week</p>
+                    </div>
+                </section>
+
+                                <section class="appointments-section">
+                    <div class="appointments-header">
+                        <h3 class="section-title">Today's Appointments</h3>
+                        <a class="view-all-link" href="#">
+                            View Schedule <span class="material-symbols-outlined link-icon"
+                                data-icon="arrow_forward">arrow_forward</span>
+                        </a>
+                    </div>
+                    <div class="table-container">
+                        <div class="table-responsive">
+                            <table class="appointments-table">
+                                <thead>
+                                    <tr>
+                                        <th>Time</th>
+                                        <th>Client Name</th>
+                                        <th>Service</th>
+                                        <th>Staff</th>
+                                        <th>Status</th>
+                                        <th class="text-right">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                                                        <tr>
+                                        <td class="time-col">09:30 AM</td>
+                                        <td class="client-col">Sophia Henderson</td>
+                                        <td>
+                                            <span class="service-name">Signature Facial Spa</span>
+                                        </td>
+                                        <td>
+                                            <div class="staff-info">
+                                                <div class="staff-avatar avatar-secondary">ME</div>
+                                                <span class="staff-name">Maria E.</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="status-badge status-confirmed">Confirmed</span>
+                                        </td>
+                                        <td class="action-col text-right">
+                                            <button class="action-btn">
+                                                <span class="material-symbols-outlined"
+                                                    data-icon="more_vert">more_vert</span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                                                        <tr class="row-alt">
+                                        <td class="time-col">11:00 AM</td>
+                                        <td class="client-col">Julianne Moore</td>
+                                        <td>
+                                            <span class="service-name">Deep Tissue Back Massage</span>
+                                        </td>
+                                        <td>
+                                            <div class="staff-info">
+                                                <div class="staff-avatar avatar-primary">SC</div>
+                                                <span class="staff-name">Sarah C.</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="status-badge status-progress">In Progress</span>
+                                        </td>
+                                        <td class="action-col text-right">
+                                            <button class="action-btn">
+                                                <span class="material-symbols-outlined"
+                                                    data-icon="more_vert">more_vert</span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                                                        <tr>
+                                        <td class="time-col">01:15 PM</td>
+                                        <td class="client-col">Emma Watson</td>
+                                        <td>
+                                            <span class="service-name">Hot Stone Therapy</span>
+                                        </td>
+                                        <td>
+                                            <div class="staff-info">
+                                                <div class="staff-avatar avatar-tertiary">JL</div>
+                                                <span class="staff-name">Julia L.</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="status-badge status-pending">Pending</span>
+                                        </td>
+                                        <td class="action-col text-right">
+                                            <button class="action-btn">
+                                                <span class="material-symbols-outlined"
+                                                    data-icon="more_vert">more_vert</span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                                                        <tr class="row-alt">
+                                        <td class="time-col">03:45 PM</td>
+                                        <td class="client-col">Olivia Wilde</td>
+                                        <td>
+                                            <span class="service-name">Aromatherapy Glow</span>
+                                        </td>
+                                        <td>
+                                            <div class="staff-info">
+                                                <div class="staff-avatar avatar-secondary">ME</div>
+                                                <span class="staff-name">Maria E.</span>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="status-badge status-confirmed">Confirmed</span>
+                                        </td>
+                                        <td class="action-col text-right">
+                                            <button class="action-btn">
+                                                <span class="material-symbols-outlined"
+                                                    data-icon="more_vert">more_vert</span>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </section>
+
+                                <section class="bento-secondary">
+                                        <div class="promo-card">
+                        <img alt="Spa environment" class="promo-bg"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyb-IueenLphJ8Bf-9NEy_-K1dzVvRgAMqazJpdhp_gD0XUcazQ2Sov6zCBccMxfQT0V7PWs80Y6p2fxBfXURZeKgDhjdO9GagG_KMV1APJZHopUAoMnQGiQuycBaRSDEwAHd-VJdM2Jm1Y3RDrGFHiBQMauEt97YmveGxkApR4u_Po7SsYgJXir3R8c8SQxHrOY0gaHLz851Ot5MSREzL_WyfuF21xNx7mfjCGBoR_ub5Kv0vaQqXPb-zIJtFGQ-gMGOWbQ2ozj0G" />
+                        <div class="promo-content">
+                            <span class="promo-badge">Trend Alert</span>
+                            <h4 class="promo-title">Lavender Aromatherapy is trending this week.</h4>
+                            <p class="promo-desc">Consider offering a bundle for frequent clients to increase retention
+                                by 15%.</p>
+                            <button class="promo-btn">Create Campaign</button>
+                        </div>
+                    </div>
+                                        <div class="chart-card">
+                        <div class="chart-header">
+                            <h4 class="chart-title">Service Distribution</h4>
+                            <span class="material-symbols-outlined chart-icon" data-icon="analytics">analytics</span>
+                        </div>
+                        <div class="chart-body">
+                            <div class="chart-row">
+                                <div class="chart-label-group">
+                                    <span>Massage Therapy</span>
+                                    <span>45%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill fill-primary" style="width: 45%"></div>
+                                </div>
+                            </div>
+                            <div class="chart-row">
+                                <div class="chart-label-group">
+                                    <span>Facial Treatments</span>
+                                    <span>32%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill fill-primary-container" style="width: 32%"></div>
+                                </div>
+                            </div>
+                            <div class="chart-row">
+                                <div class="chart-label-group">
+                                    <span>Stone Therapy</span>
+                                    <span>23%</span>
+                                </div>
+                                <div class="progress-track">
+                                    <div class="progress-fill fill-secondary-dim" style="width: 23%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+                        <footer class="main-footer">
+                © 2024 Velvet Bloom Digital Sanctuary. All rights reserved.
+            </footer>
+        </main>
+    </div>
+</body>
+
+</html>
