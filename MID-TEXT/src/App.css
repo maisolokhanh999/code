@@ -1,1 +1,14 @@
-body{background: black;}
+/* App layout styles - Tailwind handles most, custom here if needed */
+
+.app {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Custom overrides */
+nav a {
+  transition: color 0.2s;
+}
+
+main {
+  min-height: calc(100vh - 80px);
+}
